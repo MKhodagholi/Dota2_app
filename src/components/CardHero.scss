@@ -1,0 +1,48 @@
+.card-hero {
+  background: linear-gradient(180deg, #271a14 20%, #0b0604 80%);
+  border-radius: 20px;
+  box-shadow: 8px 0 20px 4px #271a14, inset 0 0 20px 8px #413932,
+    4px 0 20px 4px #000, 16px 4px 20px 4px #000;
+  width: 45%;
+  &__img {
+    z-index: 2;
+    img {
+      width: 100%;
+      transform: scale(1.5) translate(-5px);
+    }
+  }
+  &__content {
+    padding: 1rem;
+    border-radius: 0 0 20px 20px;
+    background: linear-gradient(180deg, #190d0d, #000);
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+    h2 {
+      color: #55566f;
+      font-size: 14px;
+      // font-family: $fontFamily;
+    }
+    .play-btn {
+      z-index: 3;
+      background: linear-gradient(180deg, $primaryColor, #642314);
+      box-shadow: 0 0 2px 2px #642314;
+      border-radius: 50%;
+      color: $whiteColor;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        font-size: 25px;
+        cursor: pointer;
+      }
+    }
+  }
+}
