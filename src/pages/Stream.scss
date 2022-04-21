@@ -8,5 +8,10 @@
     .title {
       margin: 2rem 0;
     }
+    .card-heros {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 }
