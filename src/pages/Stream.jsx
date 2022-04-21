@@ -1,5 +1,6 @@
 import React from "react";
 import CardHero from "../components/CardHero";
+import Menu from "../components/Menu";
 
 import Search from "../components/Search";
 
@@ -25,6 +26,7 @@ const Stream = () => {
           ))}
         </div>
       </div>
+      <Menu />
     </div>
   );
 };
