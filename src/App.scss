@@ -1,4 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap");
+
+@import "./reset";
+@import "./variables";
+@import "./components/Search";
+@import "./pages/Stream";
+@import "./components/CardHero";
+
 body {
   height: 100vh;
-  background-color: #1b1b1b;
+  background-color: $darkColor;
 }
