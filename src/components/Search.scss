@@ -9,6 +9,9 @@
   justify-content: space-between;
   font-size: 1.5rem;
   box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.5);
+  font-family: $fontFamily;
+  font-weight: 100;
+  transition: all 0.5s ease;
   input {
     all: unset;
   }
@@ -18,5 +21,11 @@
   svg {
     color: $whiteColor;
     cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .search {
+    width: 40%;
   }
 }

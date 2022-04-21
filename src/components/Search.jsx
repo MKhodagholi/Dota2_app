@@ -6,7 +6,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Search = () => {
   return (
     <form className="search">
-      <input type="text" placeholder="Search your hero..." />
+      <input
+        type="text"
+        placeholder="Search your hero..."
+        autoComplete="false"
+      />
       <FontAwesomeIcon icon={faSearch} />
     </form>
   );
