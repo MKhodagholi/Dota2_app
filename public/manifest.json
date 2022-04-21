@@ -1,0 +1,30 @@
+{
+  "short_name": "Dota 2",
+  "name": "Dota 2 Tutorial",
+  "icons": [
+    {
+      "src": "dota2_48.svg",
+      "type": "image/x-icon",
+      "sizes": "64x64 32x32 16x16"
+    },
+    {
+      "src": "dota2_96.svg",
+      "type": "image/svg",
+      "sizes": "96x96"
+    },
+    {
+      "src": "dota2_144.svg",
+      "type": "image/svg",
+      "sizes": "144x144"
+    },
+    {
+      "src": "dota2_240.svg",
+      "type": "image/svg",
+      "sizes": "240x240"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ff0000",
+  "background_color": "#ff0000"
+}
