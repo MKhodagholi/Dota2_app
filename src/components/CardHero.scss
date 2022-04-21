@@ -1,21 +1,31 @@
 .card-hero {
+  position: relative;
   background: linear-gradient(180deg, #271a14 20%, #0b0604 80%);
   border-radius: 20px;
   box-shadow: 8px 0 20px 4px #271a14, inset 0 0 20px 8px #413932,
     4px 0 20px 4px #000, 16px 4px 20px 4px #000;
-  width: 45%;
+  width: 48%;
+  margin-top: 40px;
+  transition: all 0.5s ease;
+  &:nth-child(1),
+  &:nth-child(2) {
+    margin-top: 0;
+  }
   &__img {
     z-index: 2;
     img {
       width: 100%;
-      transform: scale(1.5) translate(-5px);
+      transform: scale(1.2) translateY(-20px);
     }
   }
   &__content {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
     padding: 1rem;
     border-radius: 0 0 20px 20px;
     background: linear-gradient(180deg, #190d0d, #000);
-    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +39,6 @@
       // font-family: $fontFamily;
     }
     .play-btn {
-      z-index: 3;
       background: linear-gradient(180deg, $primaryColor, #642314);
       box-shadow: 0 0 2px 2px #642314;
       border-radius: 50%;
@@ -43,6 +52,20 @@
         font-size: 25px;
         cursor: pointer;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-hero {
+    width: 32%;
+    &__img {
+      img {
+        transform: scale(1.1) translateY(-20px);
+      }
+    }
+    &:nth-child(3) {
+      margin-top: 0;
     }
   }
 }

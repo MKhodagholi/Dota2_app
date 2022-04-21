@@ -1,26 +1,19 @@
 import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEye,
-  faEyeSlash,
-  faPlay,
-  faUsersViewfinder,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEye, faPlay } from "@fortawesome/free-solid-svg-icons";
 
-import axeImg from "../img/axe.png";
-
-const CardHero = () => {
+const CardHero = ({ name, img, views = 0 }) => {
   return (
     <div className="card-hero">
       <div className="card-hero__img">
-        <img src={axeImg} alt="" />
+        <img src={img} alt="" />
       </div>
       <div className="card-hero__content">
         <div className="describe">
-          <h1>Axe</h1>
+          <h1>{name}</h1>
           <h2>
-            <FontAwesomeIcon icon={faEye} /> 35k Views
+            <FontAwesomeIcon icon={faEye} /> {views}k Views
           </h2>
         </div>
         <div className="play-btn">

@@ -1,6 +1,7 @@
 import Axe from "./img/axe.png";
 import Ert from "./img/earthshaker.png";
 import Blood from "./img/blood.png";
+import Mars from "./img/mars.png";
 
 export const cardHeroData = [
   {
@@ -21,6 +22,6 @@ export const cardHeroData = [
   {
     name: "Mars",
     views: "24",
-    img: Axe,
+    img: Mars,
   },
 ];
