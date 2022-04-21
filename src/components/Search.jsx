@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Search = () => {
   return (
-    <div className="search">
-      <input type="text" />
+    <form className="search">
+      <input type="text" placeholder="Search your hero..." />
       <FontAwesomeIcon icon={faSearch} />
-    </div>
+    </form>
   );
 };
 
